@@ -1,0 +1,19 @@
+{
+    "exercises": [
+        {
+            "name": "Barbell Bench Press",
+            "exerciseDescription": "Lay down on a bench, the bar should be directly above your eyes, the knees are somewhat angled and the feet are firmly on the floor. Concentrate, breath deeply and grab the bar more than shoulder wide. Bring it slowly down till it briefly touches your chest at the height of your nipples. Push the bar up.",
+            "movement": "movement",
+        },
+        {
+            "name": "Barbell Back Squat",
+            "exerciseDescription": "Make sure you have put the barbell at a height where you can comfortably take it out and put it back in. Take it out and make yourself ready: The bar is somewhat lower than your shoulders, the feet are quite apart and point out, the head is in your neck and looks up, the chest is out. Go now slowly down, till your thighs are parallel with the floor, not lower. The knees point outwards, your butt, out. Make a small pause of 1 second and with as much energy as you can, push the weight up. Make a pause of 2 seconds and repeat.",
+            "movement": "movement",
+        },
+        {
+            "name": "Plank",
+            "exerciseDescription": "Get into a position on the floor supporting your weight on your forearms and toes. Arms are bent and directly below the shoulder. Keep your body straight at all times and hold this position as long as possible. To increase difficulty an arm or leg can be raised while performing this exercise.",
+            "movement": "staticHold",
+        },
+    ]
+}

@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  SettingsViewController.swift
 //  Training Log
 //
 //  Created by Owen Pierce on 2/16/19.
@@ -8,11 +8,12 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SettingsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +21,4 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
-
