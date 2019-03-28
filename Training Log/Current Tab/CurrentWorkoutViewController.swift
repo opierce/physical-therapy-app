@@ -10,11 +10,14 @@ import UIKit
 
 class CurrentWorkoutViewController: UIViewController {
 
+    @IBOutlet var tableView: UITableView!
     var currentWorkout: Workout?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        title = "Current Workout"
         
         navigationItem.rightBarButtonItem =
             UIBarButtonItem(barButtonSystemItem: .add,
@@ -30,7 +33,8 @@ class CurrentWorkoutViewController: UIViewController {
     }
 
     @objc fileprivate func didTapAddExercise() {
-        
+        let addVC = AddExercisesViewController.instantiate()
+        navigationController?.pushViewController(addVC, animated: true)
     }
 }
 

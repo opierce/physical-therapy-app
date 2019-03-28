@@ -33,10 +33,25 @@
                     <view key="view" contentMode="scaleToFill" id="x0H-u2-nih">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="use-wp-79K">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kC3-wo-0po" firstAttribute="trailing" secondItem="use-wp-79K" secondAttribute="trailing" id="Avz-zO-Oav"/>
+                            <constraint firstItem="kC3-wo-0po" firstAttribute="bottom" secondItem="use-wp-79K" secondAttribute="bottom" id="CnQ-0W-U7T"/>
+                            <constraint firstItem="use-wp-79K" firstAttribute="leading" secondItem="kC3-wo-0po" secondAttribute="leading" id="SHA-62-wLu"/>
+                            <constraint firstItem="use-wp-79K" firstAttribute="top" secondItem="kC3-wo-0po" secondAttribute="top" id="xVY-uG-bi3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kC3-wo-0po"/>
                     </view>
                     <navigationItem key="navigationItem" id="yd5-1k-e5r"/>
+                    <connections>
+                        <outlet property="tableView" destination="use-wp-79K" id="EpY-qy-aw2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVa-H8-2ke" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

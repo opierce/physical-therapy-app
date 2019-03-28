@@ -14,6 +14,7 @@ class AthleteProfileViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        title = "Athlete Profile"
     }
 
 }

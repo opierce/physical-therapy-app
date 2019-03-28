@@ -15,5 +15,10 @@
             "exerciseDescription": "Get into a position on the floor supporting your weight on your forearms and toes. Arms are bent and directly below the shoulder. Keep your body straight at all times and hold this position as long as possible. To increase difficulty an arm or leg can be raised while performing this exercise.",
             "movement": "staticHold",
         },
+        {
+            "name": "Side Lying Hip Abduction",
+            "exerciseDescription": "While lying on one side, stack your hips and bend the lower leg while straightening the upper leg. Raise the leg with knee locked and foot parallel to the ground.",
+            "movement": "dynamicHold",
+        }
     ]
 }

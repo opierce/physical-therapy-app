@@ -21,6 +21,7 @@
                     <connections>
                         <segue destination="hnE-fE-M5r" kind="relationship" relationship="viewControllers" id="XYn-2m-5rp"/>
                         <segue destination="7pz-36-Psu" kind="relationship" relationship="viewControllers" id="0N9-4w-YKf"/>
+                        <segue destination="G0w-b9-1xN" kind="relationship" relationship="viewControllers" id="A1c-rB-VhH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -31,7 +32,7 @@
         <scene sceneID="jbC-Ul-X3b">
             <objects>
                 <viewControllerPlaceholder storyboardName="CurrentWorkoutViewController" id="hnE-fE-M5r" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="fhL-e1-ZVH"/>
+                    <tabBarItem key="tabBarItem" title="Current" image="dumbell" id="fhL-e1-ZVH"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pNz-rH-M5e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,21 +42,26 @@
         <scene sceneID="Xek-PC-1km">
             <objects>
                 <viewControllerPlaceholder storyboardName="WorkoutHistoryViewController" id="7pz-36-Psu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="gT2-MP-JPz"/>
+                    <tabBarItem key="tabBarItem" title="History" image="clipboard" id="gT2-MP-JPz"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="geL-i1-eBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="726" y="-202"/>
+            <point key="canvasLocation" x="725" y="-201"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--AthleteProfileViewController-->
         <scene sceneID="h0s-g1-eAr">
             <objects>
-                <viewControllerPlaceholder id="G0w-b9-1xN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="kcw-OW-GtY"/>
+                <viewControllerPlaceholder storyboardName="AthleteProfileViewController" id="G0w-b9-1xN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="muscle" id="kcw-OW-GtY"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dtw-I4-e5z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="726" y="-66"/>
+            <point key="canvasLocation" x="725" y="-1"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="clipboard" width="30" height="30"/>
+        <image name="dumbell" width="30" height="30"/>
+        <image name="muscle" width="30" height="30"/>
+    </resources>
 </document>

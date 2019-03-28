@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 enum WorkType: String {
     case movement
     case staticHold
+    case dynamicHold
 }
 
 class Exercise: NSObject {
@@ -24,7 +26,36 @@ class Exercise: NSObject {
     
     static let hardcodedList: [Exercise] = loadHardcodedExercises()
     
+    init(json: JSON) {
+        super.init()
+        name = json["name"].string
+        exerciseDescription = json["exerciseDescription"].string
+        movement = WorkType(rawValue: json["movement"].string ?? "movement")
+    }
+    
     static func loadHardcodedExercises() -> [Exercise] {
-        return [Exercise]()
+        do {
+            if let path = Bundle.main.path(forResource: "exercise-list", ofType: "json") {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path))
+                let exerciseJSON = JSON(data: data)
+                let exerciseList = exerciseJSON["exercises"].arrayValue
+                var parsedExercises = [Exercise]()
+                
+                for entry in exerciseList {
+                    parsedExercises.append(Exercise(json: entry))
+                }
+                
+                print("Loaded Exercises: \n\(parsedExercises)")
+                return parsedExercises
+                
+            } else {
+                print("Exercise file not found!")
+                return [Exercise]()
+            }
+            
+        } catch {
+            print("Failed to load hardcoded exercises")
+            return [Exercise]()
+        }
     }
 }

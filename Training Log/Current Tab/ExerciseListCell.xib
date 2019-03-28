@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ExerciseListCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="82" id="ENj-WP-KVJ" customClass="ExerciseListCell" customModule="Training_Log" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ENj-WP-KVJ" id="nxq-Js-7IO">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="81.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KnD-gh-hsp">
+                        <rect key="frame" x="8" y="8" width="60" height="65.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="65.5" id="bya-gx-zzh"/>
+                            <constraint firstAttribute="width" constant="60" id="vSh-75-NRN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="exerciseName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsM-kK-oDa">
+                        <rect key="frame" x="76" y="20.5" width="113" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="targetedMuscleGroup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPT-Xt-3wL">
+                        <rect key="frame" x="76" y="41.5" width="147.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KnD-gh-hsp" firstAttribute="top" secondItem="nxq-Js-7IO" secondAttribute="top" constant="8" id="3fK-u7-sJj"/>
+                    <constraint firstItem="kPT-Xt-3wL" firstAttribute="leading" secondItem="KnD-gh-hsp" secondAttribute="trailing" constant="8" id="Icp-ZM-aOh"/>
+                    <constraint firstAttribute="bottom" secondItem="KnD-gh-hsp" secondAttribute="bottom" constant="8" id="Oqp-5x-RuK"/>
+                    <constraint firstItem="kPT-Xt-3wL" firstAttribute="top" secondItem="XsM-kK-oDa" secondAttribute="bottom" id="pA1-de-u7s"/>
+                    <constraint firstItem="XsM-kK-oDa" firstAttribute="centerY" secondItem="KnD-gh-hsp" secondAttribute="centerY" constant="-10" id="pq3-dX-wiH"/>
+                    <constraint firstItem="XsM-kK-oDa" firstAttribute="leading" secondItem="KnD-gh-hsp" secondAttribute="trailing" constant="8" id="tmF-W7-AUu"/>
+                    <constraint firstItem="KnD-gh-hsp" firstAttribute="leading" secondItem="nxq-Js-7IO" secondAttribute="leading" constant="8" id="wkL-mn-JNj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="XsM-kK-oDa" id="A3E-Ji-dku"/>
+                <outlet property="shortDescriptionLabel" destination="kPT-Xt-3wL" id="MVm-PG-Z4d"/>
+                <outlet property="smallImageView" destination="KnD-gh-hsp" id="ewN-ul-fT8"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

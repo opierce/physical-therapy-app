@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Exercise Detail View Controller-->
+        <scene sceneID="aLp-Cx-a7Y">
+            <objects>
+                <viewController storyboardIdentifier="ExerciseDetailViewController" id="QoU-CA-q1P" customClass="ExerciseDetailViewController" customModule="Training_Log" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="257-gb-1H1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tcJ-qd-5Kh">
+                                <rect key="frame" x="16" y="36" width="343" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="mrZ-Jg-3rs"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AFm-dY-5LB">
+                                <rect key="frame" x="16" y="252" width="343" height="323"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="En0-Nu-FSs">
+                                <rect key="frame" x="16" y="591" width="343" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="hzg-hx-9dW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addExercise" destination="QoU-CA-q1P" eventType="touchUpInside" id="Wf0-qB-dhE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AFm-dY-5LB" firstAttribute="top" secondItem="tcJ-qd-5Kh" secondAttribute="bottom" constant="16" id="8eZ-Jr-5iI"/>
+                            <constraint firstItem="tcJ-qd-5Kh" firstAttribute="leading" secondItem="5dd-2J-ga6" secondAttribute="leading" constant="16" id="Gyh-bs-Gyu"/>
+                            <constraint firstItem="En0-Nu-FSs" firstAttribute="top" secondItem="AFm-dY-5LB" secondAttribute="bottom" constant="16" id="TIG-9Z-9Zl"/>
+                            <constraint firstItem="5dd-2J-ga6" firstAttribute="trailing" secondItem="AFm-dY-5LB" secondAttribute="trailing" constant="16" id="Xmx-0Z-vsQ"/>
+                            <constraint firstItem="AFm-dY-5LB" firstAttribute="leading" secondItem="5dd-2J-ga6" secondAttribute="leading" constant="16" id="cpi-fx-sw0"/>
+                            <constraint firstItem="5dd-2J-ga6" firstAttribute="trailing" secondItem="tcJ-qd-5Kh" secondAttribute="trailing" constant="16" id="eFD-ho-3ww"/>
+                            <constraint firstItem="5dd-2J-ga6" firstAttribute="trailing" secondItem="En0-Nu-FSs" secondAttribute="trailing" constant="16" id="epj-ZQ-UhM"/>
+                            <constraint firstItem="En0-Nu-FSs" firstAttribute="leading" secondItem="5dd-2J-ga6" secondAttribute="leading" constant="16" id="m7D-RN-g9B"/>
+                            <constraint firstItem="5dd-2J-ga6" firstAttribute="bottom" secondItem="En0-Nu-FSs" secondAttribute="bottom" constant="16" id="x0f-vr-DHE"/>
+                            <constraint firstItem="tcJ-qd-5Kh" firstAttribute="top" secondItem="5dd-2J-ga6" secondAttribute="top" constant="16" id="x4U-FI-INI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5dd-2J-ga6"/>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="En0-Nu-FSs" id="wLQ-S7-XXj"/>
+                        <outlet property="descriptionTextView" destination="AFm-dY-5LB" id="V1c-Vg-PWD"/>
+                        <outlet property="image" destination="tcJ-qd-5Kh" id="qtN-ak-ycG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TVM-Dw-Qxx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193" y="220"/>
+        </scene>
+    </scenes>
+</document>
